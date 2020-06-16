@@ -1,0 +1,18 @@
+
+  <form>
+    <input type="text" name="id" value="아이디1">
+      <input type="text" name="id" value="아이디2">
+ </form>
+      <form>
+        <input type="text" name="pw" value="비밀번호1">
+          <input type="text" name="pw" 
+          value="비밀번호2" onclick='get()'>
+ </form>
+
+ <script>
+   document.forms[0].id[0].value = 'Hello';
+   function get() {
+    document.forms[1].pw[1].value = document.forms[0].id[0].value
+   }
+
+ </script>

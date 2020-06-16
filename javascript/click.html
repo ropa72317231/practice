@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <script>
+    function fnClick(obj) {
+      var z = alert;
+      z("ho~~~");
+
+      var a = 10;
+      var b = 100;
+      var tem = `${a} 더하기 ${b}`;
+      alert(tem);
+
+      console.dir(obj);
+      console.log(obj.name);
+      obj.style.backgroundColor = 'red';
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <input type="text" name="id" value="아이디1" onclick="fnClick(this)">
+    <input type="text" name="id" value="아이디2">
+  </form>
+</body>
+
+</html>
