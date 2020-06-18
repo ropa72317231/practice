@@ -1,5 +1,8 @@
 <script>
   var nums = [100, 200, 300, 400, 500];
-  var last = nums.splice(3, 2);
+  var dels = nums.splice(3, 2);
+  
+  delete(nums[4]);
+  delete(nums[3]);
   console.log(nums);
  </script>

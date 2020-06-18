@@ -1,7 +1,15 @@
 <script>
+  
   var str = prompt('문장을 입력해주세요.')
-  var s = str.split('').reverse();
-  str = s.join('');
+  // var s = str.split('').reverse();
+  // str = s.join('');
 
+  var s = "java";
+  console.log(s.replace ('a', 'z'));
+  s.split('').replace('a', 'z').join(''); // 이렇게도 가능
+
+
+// chaining
+str = str.split('').reverse().join('');
   console.log(str);
  </script>

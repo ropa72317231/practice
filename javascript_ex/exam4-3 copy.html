@@ -1,0 +1,28 @@
+<style>
+  body {
+    font-family: 'Courier New';
+  }
+</style>
+
+<script>
+var num = prompt('개수 입력');
+var space = num -1 ;  //여백
+var count = 1; //출력되는 * 개수
+
+for(var i = 1; i<=num; i++) {
+  for(var j = 1; j<=num; j++) {
+    if(j <= space) {
+      document.write('&nbsp;');
+    } else {
+      for(var k = 1; k <= count; k++){
+        document.write('*')
+      }
+      break;
+    }
+  }
+  space--;
+  count += 2;
+  document.write('<br>');
+}
+
+</script>

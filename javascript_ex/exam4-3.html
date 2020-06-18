@@ -1,0 +1,28 @@
+<style>
+  body { font-family: 'Courier New'; }
+  </style>
+
+  <script>
+  var num = prompt('개수 입력');
+  num = parseInt(num);
+  var star = num / 3 + 1;
+  var left = star;
+  var right = star;
+  
+    for(var i = 1; i <= num; i++){
+      for(var j = 1; j <= num; j++){
+        if(j < left || j > right) {
+          document.write('');
+        } else {
+          document.write('*');
+        }
+      }
+      if(i < star) {
+        left--;
+        right++;
+      } else {
+        left++;
+        right--;
+      }
+    }
+</script>

@@ -1,0 +1,19 @@
+<script>
+  function fnOnLoad() {
+    for (var i = 1; i <= 3; i++) {
+      (function(n) {
+
+        document.getElementById("btn" + i).addEventListener("click", function () {
+        alert(n);
+      });
+      
+      }) (i);
+    }
+  }
+</script>
+
+<body onload="fnOnLoad()">
+  <input type="button" id="btn1" value="버튼1">
+  <input type="button" id="btn2" value="버튼2">
+  <input type="button" id="btn3" value="버튼3">
+</body>

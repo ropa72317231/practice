@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <script>
+    var input = Math.random() * 10 + 1;
+    input = parseInt(input);
+    var result = "";
+    result = input % 2 == 0 ? "짝수" : "홀수";
+    function odd() {
+      result == "홀수" ? alert("맞음") : alert("틀림");
+    }
+    function even() {
+      result == "짝수" ? alert("맞음") : alert("틀림");
+    }
+  </script>
+</head>
+
+<body>
+  <input type="button" value="홀" onclick="odd()">
+  <input type="button" value="짝" onclick="even()">
+</body>
+
+</html>

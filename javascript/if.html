@@ -1,0 +1,20 @@
+<script>
+  setInterval(function () {
+
+    var date = new Date();
+    var hour = date.getHours();
+    var min = date.getMinutes();
+    var sec = date.getSeconds();
+    sec = (sec < 10) ? '0' + sec : sec;
+
+    document.write("현재시각 : " + hour + "시 " + min + "분 " + sec + "초<br>");
+    if (hour < 12) {
+      document.write("아침");
+    } else if (hour < 15) {
+      document.write("점심");
+    } else {
+      document.write("저녁");
+    }
+
+  }, 1000);
+</script>

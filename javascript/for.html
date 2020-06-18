@@ -1,0 +1,17 @@
+<script>
+  var obj = {
+    name: "kim",
+    age: 20,
+    hobby: ["당구", "수영", "독서"]
+  };
+  for (var i in obj) {
+    var type = typeof(obj[i]);
+    if(type == 'object') {
+      for(var j in obj[i]) {
+        document.write(obj[i][j] + '<br>');
+      }
+    } else {
+    document.write(obj[i] + "<br>");
+    }
+  }
+</script>
